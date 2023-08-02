@@ -13,12 +13,12 @@ function App() {
   // return <div><Message></Message></div>
   return (
     <div>
-      {alertVisible && (
-        <Alert onClose={() => setAlertVisibility(false)}>My Alert</Alert>
-      )}
       <Button color="danger" onClick={() => setAlertVisibility(true)}>
         My Button
       </Button>
+      {alertVisible && (
+        <Alert onClose={() => setAlertVisibility(false)}>My Alert</Alert>
+      )}
       <ListGroup
         items={items}
         heading="Cities where I lived"
